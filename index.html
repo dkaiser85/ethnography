@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Culture MRI® Ethnography Interview</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>The Culture MRI® Ethnography Interview Guide</h1>
+    <div id="intro-section">
+      <h2>Introduction</h2>
+      <p>Welcome! Below is the structure for conducting interviews based on survey results. Select a category and score to view tailored questions.</p>
+      <p>
+        <strong>Introduction Script:</strong> <br>
+        Hello, thank you for participating in this interview. My name is Ben Ortlip, and I am the founder of The Culture MRI®. Your responses will remain confidential and anonymous. This conversation aims to validate survey results and deepen understanding of your experiences.
+      </p>
+      <p><strong>Warm-Up Questions:</strong></p>
+      <ul>
+        <li>Can you describe a typical day at work for you?</li>
+        <li>How has your experience been working at this company so far?</li>
+        <li>What are some of the things you enjoy most about your job, and what are some of the challenges you face?</li>
+      </ul>
+    </div>
+
+    <div id="question-generator">
+      <h2>Category and Score Selection</h2>
+      <form id="questionForm">
+        <label for="category">Select Category:</label>
+        <select id="category">
+          <option value="M1">M1 - Safety</option>
+          <option value="M2">M2 - Compensation</option>
+          <option value="M3">M3 - Operations</option>
+          <option value="M4">M4 - Training & Support</option>
+          <option value="M5">M5 - Workload</option>
+          <option value="M6">M6 - Stressload</option>
+          <option value="M7">M7 - Placement</option>
+        </select>
+
+        <label for="score">Select Score:</label>
+        <select id="score">
+          <option value="poor">Poor (0-5)</option>
+          <option value="fair">Fair (5-8)</option>
+          <option value="great">Great (8-10)</option>
+        </select>
+
+        <button type="button" id="generateQuestions">Generate Questions</button>
+      </form>
+    </div>
+
+    <div id="questions-output">
+      <h2>Interview Questions</h2>
+      <ul id="questions-list"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
